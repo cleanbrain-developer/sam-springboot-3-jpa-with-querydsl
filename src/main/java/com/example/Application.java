@@ -13,13 +13,13 @@ import lombok.RequiredArgsConstructor;
 
 @SpringBootApplication
 @RequiredArgsConstructor
-public class AccessingDataJpaApplication {
+public class Application {
 	private final CustomerRepository customerRepository;
 
-	private static final Logger log = LoggerFactory.getLogger(AccessingDataJpaApplication.class);
+	private static final Logger log = LoggerFactory.getLogger(Application.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(AccessingDataJpaApplication.class);
+		SpringApplication.run(Application.class);
 	}
 
 	@Bean
